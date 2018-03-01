@@ -80,7 +80,7 @@
 
 22         mov %ax,%gs
 
-23         lss _stack_start,%esp      # 表示_stack_startèss:esp，设置系统堆栈。
+23         lss _stack_start,%esp      # 表示_stack_start->ss:esp，设置系统堆栈。
 
 # stack_start定义在kernel/sched.c，69行。
 
