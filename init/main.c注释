@@ -484,7 +484,7 @@
 
 158         time_init();          // 设置开机启动时间。（见第92行）
 
-159         sched_init();         // 调度程序初始化（加载任务0的tr,ldtr）（kernel/sched.c，385）
+159         sched_init();         // 调度程序初始化（加载任务0的tr,ldtr）（kernel/sched.c，385）会初始化定时芯片以及设置定时中断0x20处理程序，设置0x80系统调用中断处理程序
 
 160         buffer_init(buffer_memory_end); // 缓冲管理初始化，建内存链表等。（fs/buffer.c，348）
 
