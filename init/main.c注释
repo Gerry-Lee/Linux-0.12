@@ -500,6 +500,7 @@
 
 164         move_to_user_mode();    // 移到用户模式下执行。（include/asm/system.h，第1行）
 
+// fork这里用了内联汇编
 165         if (!fork()) {          /* we count on this going ok */
 
 166                 init();         // 在新建的子进程（任务1即init进程）中执行。
